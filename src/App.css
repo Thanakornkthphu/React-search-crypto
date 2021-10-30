@@ -1,19 +1,84 @@
-.App {
+.crypto__App {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__App {
+  width: 1080px;
+}
+
+.crypto__Search {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.crypto__Input {
+  margin-top: 20px;
+  width:  40rem;
+  height: 35px;
+  padding-left: 30px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #95A5A6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.crypto__Input:focus {
+  border: 1px solid #212F3C;
 }
 
-.App-header {
+.header__form {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 50px;
+
+  margin-top: 50px;
+  padding-left: 0px;
+  
+  list-style: none;
+  background-color: #212F3C;
+
+  border-radius: 5px;
+  font-weight: bold;
+
+  text-align: center;
+  color: white;
+}
+
+#logo {
+  margin-left: 10px;
+}
+
+#name {
+  margin-left: 25px;
+}
+
+#symbol {
+  margin-left: 150px;
+}
+
+#price {
+  margin-left: 135px;
+}
+
+#volume {
+  margin-left: 120px;
+}
+
+#percent {
+  margin-left: 105px;
+}
+
+#marketCap {
+  margin-left: 80px;
+}
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,17 +87,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+} */
