@@ -36,6 +36,14 @@ function App() {
         return coin.name.toLowerCase().includes(search.toLowerCase())
     })
     
+    const filteredCoins = (e) => {
+        if (search !== "" && e.keyword === 13) {
+            coins.filter(coin => {
+                return coin.name.toLowerCase().includes(search.toLowerCase())
+            })
+        }
+    }
+    
     return (
         <div className="crypto__App">
             <div className="container__App">
