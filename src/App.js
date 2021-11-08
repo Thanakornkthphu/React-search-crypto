@@ -30,6 +30,9 @@ function App() {
         if(search === ''){
           alert('Please enter name of coin')
         }
+            
+        coins.filter(coin => {
+            coin.name.toLowerCase().includes(search.toLowerCase()))
     }
 
     const filteredCoins = coins.filter(coin => {
