@@ -23,36 +23,17 @@ function App() {
     const handleChange = (e) => {
         setSearch(e.target.value);
     };
-
-    const onSubmit = (e) => {
-        e.preventDefault();
-
-        if(search === ''){
-          alert('Please enter name of coin')
-        }
-            
-        coins.filter(coin => {
-            coin.name.toLowerCase().includes(search.toLowerCase()))
-    }
-
-    const filteredCoins = coins.filter(coin => {
+    
+    const filteredCoins = coins.filter((coin) => {
         return coin.name.toLowerCase().includes(search.toLowerCase())
     })
-    
-    const filteredCoins = (e) => {
-        if (search !== "" && e.keyword === 13) {
-            coins.filter(coin => {
-                return coin.name.toLowerCase().includes(search.toLowerCase())
-            })
-        }
-    }
     
     return (
         <div className="crypto__App">
             <div className="container__App">
                 <div className="crypto__Search">
                     <h1> Search a currency</h1>
-                    <form onSubmit={onSubmit}>
+                    <form>
                         <input 
                         type="text"
                         placeholder="Search" 
