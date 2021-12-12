@@ -7,8 +7,7 @@ import './App.css';
 
 function App() {
 
-    const [coins, setCoins] = useState([]);
-    const [search, setSearch] = useState("");
+    
 
     useEffect(() => {
         axios
