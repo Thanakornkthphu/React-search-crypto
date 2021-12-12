@@ -16,9 +16,9 @@ function Coins({image, name, symbol, price, volume, priceChange, marketcap}) {
                     <p className="coin__Volume"> ${volume.toLocaleString()} </p>
                     <div className="coin__Percent">
                         {priceChange < 0 ? (
-                            <p className="coin__Percent" id="red"> {priceChange.toFixed(2)}% </p>
+                            <p className="coin__Percent" id="red"> {priceChange}% </p>
                         ) : (
-                            <p className="coin__Percent" id="green"> {priceChange.toFixed(2)}% </p>
+                            <p className="coin__Percent" id="green"> {priceChange}% </p>
                             )}
                     </div>
                     <p className="coin__Marketcap">
